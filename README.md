@@ -1,4 +1,4 @@
-Servidor Web NodeJS para recebimento de dados informados pelo usuário no formulário.
+Aplicação Web em NodeJS para recebimento de dados informados pelo usuário no formulário.
 Usuário informa o seu Nome e sua Data de Nascimento e após clicar no botão "Calcular" ele será direcionado para a outra página que exibirá seus Dados junto com sua Idade atual.
 
 --INSTRUÇÕES DE EXECUÇÃO--
