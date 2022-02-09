@@ -18,7 +18,7 @@ const servidor = app.listen(8080, function () {
 app.get("/", function (req, res) {
   fs.readFile("formulario.html", function (erro, dado) {
     res.writeHead(200, {
-      "Content-Type": "text/html"
+      "Content-Type" : "text/html"
     });
     res.write(dado);
     res.end();
@@ -40,7 +40,7 @@ app.post("/idade", function (req, res) {
     }
 
     res.writeHead(200, {
-      "Content-Type": "text/html"
+      "Content-Type" : "text/html"
     });
     res.write(dado);
     res.end();
