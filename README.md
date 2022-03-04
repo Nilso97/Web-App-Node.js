@@ -16,7 +16,7 @@ OBS: Estas instruções funcionam para o Windows! Caso seja um Linux os comandos
 
 <strong>DENTRO DO EDITOR</strong>
 - Abra os arquivos em seu editor de códigos, no meu caso utilizei o VSCode;
-- No terminal do seu editor insira o comando "node main.js" para executar o arquivo.js;
+- No terminal do seu editor insira o comando --node main.js-- para executar o arquivo.js;
 
 No terminal será exibida uma mensagem dizendo que o servidor está em execução.
 
