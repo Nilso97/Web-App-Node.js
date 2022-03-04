@@ -10,8 +10,8 @@ OBS: Estas instruções funcionam para o Windows! Caso seja um Linux os comandos
 - Instale o NodeJS;
 
 <strong>DENTRO DO PROMPT DE COMANDO DO NODE</strong>
-- Digite o comando: cd --local/pasta-- Ex. cd desktop/NodeJs
-OU
+- Digite o comando: cd --local/pasta-- Ex. cd desktop/NodeJs 
+<br>OU
 - Digite o comando "cd" e arraste a página com todos os arquivos para dentro do Prompt de Comando do NodeJS e de um "ENTER";
 
 - Instale o pacote Express => npm install express
