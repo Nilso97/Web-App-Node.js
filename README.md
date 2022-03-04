@@ -11,7 +11,6 @@ OBS: Estas instruções funcionam para o Windows! Caso seja um Linux os comandos
 
 <strong>DENTRO DO PROMPT DE COMANDO DO NODE</strong>
 - Digite o comando: cd --local/pasta-- Ex. cd desktop/NodeJs 
-
 - Instale o pacote Express => npm install express
 - Instale o body parser => npm install body-parser
 
