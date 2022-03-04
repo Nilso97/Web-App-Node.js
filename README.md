@@ -4,6 +4,7 @@ Aplicação Web em NodeJS para recebimento de dados informados pelo usuário no 
 Usuário informa o seu Nome e sua Data de Nascimento e após clicar no botão "Calcular" ele será direcionado para a outra página que exibirá seus Dados junto com sua Idade atual.
 
 <strong>--INSTRUÇÕES DE EXECUÇÃO--</strong>
+<br>
 OBS: Estas instruções funcionam para o Windows! Caso seja um Linux os comandos serão outros.
 
 - Instale o NodeJS;
