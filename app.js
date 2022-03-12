@@ -11,7 +11,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const urlencodedParser = bodyParser.urlencoded({
     extended: true
-})
+});
 
 const server = app.listen(8080, () => {
     const serverPort = server.address().port;
@@ -28,7 +28,7 @@ app.get("/", ((req, res) => {
     });
 }));
 
-app.post("/idade", urlencodedParser, (req, res) => {
+app.post("/idade", urlencodedParser, ((req, res) => {
     fs.readFile("idade.html", function (err, data) {
         let hoje = new Date();
         let valores = {
@@ -47,4 +47,4 @@ app.post("/idade", urlencodedParser, (req, res) => {
         res.write(data);
         res.end();
     });
-});
+}));
