@@ -15,36 +15,36 @@ const urlencodedParser = bodyParser.urlencoded({
 
 const server = app.listen(8080, () => {
     const serverPort = server.address().port;
-    console.log("Servidor Web rodando na porta %s", serverPort);
-})
+    console.log("Servidor Web em execução na porta %s", serverPort);
+});
 
 app.get("/", ((req, res) => {
     fs.readFile("formulario.html", function (err, data) {
         res.writeHead(200, {
             "Content-Type": "text/html"
-        })
+        });
         res.write(data);
         res.end();
-    })
-}))
+    });
+}));
 
 app.post("/idade", urlencodedParser, (req, res) => {
     fs.readFile("idade.html", function (err, data) {
         let hoje = new Date();
         let valores = {
             "nome": req.body.nome,
-            "anonasc": req.body.anonasc,
-            "idade": (hoje.getFullYear() - parseInt(req.body.anonasc))
+            "anoNasc": req.body.anoNasc,
+            "idade": (hoje.getFullYear() - parseInt(req.body.anoNasc))
         }
 
-        for (let chave in valores) {
-            data = data.toString().replace("{{" + chave + "}}", valores[chave]);
+        for (let campo in valores) {
+            data = data.toString().replace("{{" + campo + "}}", valores[campo]);
         }
 
         res.writeHead(200, {
             "Content-Type": "text/html"
-        })
+        });
         res.write(data);
         res.end();
-    })
-})
+    });
+});
