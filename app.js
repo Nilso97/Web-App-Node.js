@@ -32,9 +32,9 @@ app.post("/idade", urlencodedParser, ((req, res) => {
     fs.readFile("idade.html", function (err, data) {
         let hoje = new Date();
         let valores = {
-            "nome": req.body.nome,
-            "anoNasc": req.body.anoNasc,
-            "idade": (hoje.getFullYear() - parseInt(req.body.anoNasc))
+            "nome": req.body.nome, // Nome:
+            "anoNasc": req.body.anoNasc, // Ano de Nascimento:
+            "idade": (hoje.getFullYear() - parseInt(req.body.anoNasc)) // Idade:
         }
 
         for (let campo in valores) {
